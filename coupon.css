@@ -1,0 +1,34 @@
+.container {
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #bd3737;
+    color: #eae1e0;
+    border: 2px solid #691e17;
+    margin-top: 10px;
+}
+
+.deal {
+    flex: 1;
+    padding: 20px;
+}
+
+.deal h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #691e17;
+}
+
+.image-container img {
+    max-width: 50%;
+    max-height: 50%;
+}

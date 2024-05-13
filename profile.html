@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="pageBar.css">
+    <style>
+
+        form {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            margin-bottom: 10px;
+            width: calc(100% - 22px);
+            padding: 5px;
+        }
+        input[type="submit"] {
+            background-color: #bd3737;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #850303;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">BRUMMY COCKTAILS</a>
+    <a href="bars.html">Bars</a>
+    <a href="events.html">Events</a>
+    <a href="deals.html">Deals</a>
+    <a style="background-color: #bd3737" href="profile.html">Profile</a>
+</nav>
+<header>
+    <h1>Your Profile</h1>
+</header>
+<main>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <form id="login">
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <input type="submit" value="Login">
+            <span id="loginError" class="error"></span>
+        </form>
+    </div>
+    <div id="signupForm">
+        <h2>Sign Up</h2>
+        <form id="signup">
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <input type="submit" value="Sign Up">
+            <span id="signupError" class="error"></span>
+        </form>
+    </div>
+</main>
+
+<script>
+    // JavaScript code to handle login and signup form submissions
+    document.getElementById('login').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var username = document.getElementById('loginUsername').value.trim();
+        var password = document.getElementById('loginPassword').value.trim();
+
+        // Check if username and password are not empty
+        if (username === '' || password === '') {
+            document.getElementById('loginError').textContent = 'Please fill in all fields.';
+        } else {
+            // Here you can add code to validate the username and password
+            // and authenticate the user
+            // For now, let's just log the username and password to console
+            console.log('Login - Username: ' + username + ', Password: ' + password);
+            // Redirect the user to the profile page
+            window.location.href = 'profile.html';
+        }
+    });
+
+    document.getElementById('signup').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var username = document.getElementById('signupUsername').value.trim();
+        var password = document.getElementById('signupPassword').value.trim();
+
+        // Check if username and password are not empty
+        if (username === '' || password === '') {
+            document.getElementById('signupError').textContent = 'Please fill in all fields.';
+        } else {
+            // Here you can add code to create a new user account with the provided username and password
+            // For now, let's just log the username and password to console
+            console.log('Sign Up - Username: ' + username + ', Password: ' + password);
+            // Redirect the user to the profile page
+            window.location.href = 'profile.html';
+        }
+    });
+</script>
+</body>
+</html>

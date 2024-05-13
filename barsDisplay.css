@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container h1 {
+    height: 40px;
+    font-size: 25px;
+    font-family: Tahoma, sans-serif;
+    border: 2px solid #570c0c;
+    text-align: center;
+    background-color: #6c0505;
+    margin-bottom: 0;
+    color: #eae1e0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.vertical-menu {
+    width: 406px;
+    height: 400px;
+    overflow-y: auto;
+    float: left;
+
+}
+
+.vertical-menu a {
+    background-color: #6c0505;
+    color: #eae1e0;
+    display: block;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Tahoma, sans-serif;
+    border: 2px solid #570c0c;
+
+}
+
+.vertical-menu a:hover {
+    background-color: #850303;
+}
+
+.vertical-menu a.active {
+    background-color: #bd3737;
+    color: #eae1e0;
+}
+
+.locationBox {
+    border: 3px solid #6c0505;
+    width: 400px;
+    height: 400px;
+    clear: both;
+    float: left;
+
+}
+
+.locationBox iframe {
+    width: 400px;
+    height: 400px;
+
+}
+
+.infoBox {
+    display: none;
+    width: 500px;
+    height: 250px;
+    background-color: #6c0505;
+    padding:20px;
+    margin-left: 30px;
+    overflow-y: auto;
+    float: left;
+    color: #eae1e0;
+}
+
+div.gallery {
+    background-color: #570c0c;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    width: 530px;
+    height: 210px;
+    float: left;
+    margin-left: 30px;
+}
+
+div.gallery img {
+    padding: 5px;
+    width: 200px;
+    height: 200px
+}
+
+.cocktailMenu {
+    background-color: #570c0c;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    padding: 5px;
+    width: 530px;
+    height: 500px;
+    float: left;
+    margin-left: 30px;
+}
+
+.cocktailMenu img {
+    width: 600px;
+    height: 600px;
+}
+
+.largerImageBox {
+    display: none;
+    height: 600px;
+    width: 600px;
+    border: 5px solid #6c0505;
+}
+
+.largerImageBox img {
+    width: 600px;
+    height: 600px;
+}
+
+.reviewsAndRecipes {
+    width: 600px;
+    height: 600px;
+    border: 5px solid #6c0505;
+    overflow-y: auto;
+    background-color: #6c0505;
+}
+
+.reviewsAndRecipes a {
+    height: auto;
+    background-color: #6c0505;
+    color: #eae1e0;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
+    border: 2px solid #570c0c;
+}

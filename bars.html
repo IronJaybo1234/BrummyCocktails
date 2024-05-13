@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="pageBar.css">
+  <link rel="stylesheet" href="barsDisplay.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">BRUMMY COCKTAILS</a>
+  <a style="background-color: #bd3737" href="bars.html">Bars</a>
+  <a href="events.html">Events</a>
+  <a href="deals.html">Deals</a>
+  <a href="profile.html">Profile</a>
+</nav>
+<header>
+  <h1>Our Lovely Independent Bars</h1>
+</header>
+<main>
+  <div class="container">
+    <div style="margin-left: 80px">
+      <h1>Locations</h1>
+      <div class="vertical-menu" id="menu">
+        <a class="active" onclick="showMapAndInfo('location1')">Passing Fancies</a>
+        <a onclick="showMapAndInfo('location2')">40 St Pauls</a>
+        <a onclick="showMapAndInfo('location3')">Couch</a>
+        <a onclick="showMapAndInfo('location4')">Tierra</a>
+        <a onclick="showMapAndInfo('location5')">Chakana</a>
+      </div>
+      <div class="locationBox" id="locationBox"></div>
+    </div>
+    <div style="margin-left: 60px">
+      <h1>Information</h1>
+      <div class="infoBox" id="infoBox"></div>
+      <div class="gallery-container">
+        <div class="gallery" id="gallery"></div>
+      </div>
+      <div class="cocktailMenu" id="cocktailMenu" onclick="showMapAndInfo(this.Location)">
+        <img src="martini.jpg">
+      </div>
+    </div>
+    <div style="margin-left: 60px">
+      <h1>Reviews</h1>
+      <div class="largerImageBox" id="largerImageBox">IMAGE</div>
+      <div class="reviewsAndRecipes" id="reviewsAndRecipes">
+        <a>eee</a>
+        <a>eee</a>
+        <a>eee</a>
+        <a>eee</a>
+      </div>
+      <form id="reviewForm">
+        <input type="text" id="reviewInput" placeholder="Post a review (400 char or more)">
+        <button type="button" onclick="submitReview()">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="barsFunc.js"></script>
+</main>
+</body>
+</html>
